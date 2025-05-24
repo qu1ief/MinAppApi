@@ -1,6 +1,6 @@
-﻿namespace MinAppApi.Dtos
+﻿namespace MinAppApi.Dtos.Ticket
 {
-    public class TicketReadDto
+    public class TicketGetDto
     {
         public int Id { get; set; }
         public string Type { get; set; }

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MinAppApi.Dtos
+namespace MinAppApi.Dtos.Ticket
 {
     public class TicketCreateDto
     {
@@ -12,6 +12,8 @@ namespace MinAppApi.Dtos
 
         [Required, Range(0, int.MaxValue)]
         public int QuantityAvailable { get; set; }
+        public int EventId { get; set; }
+
     }
 
 

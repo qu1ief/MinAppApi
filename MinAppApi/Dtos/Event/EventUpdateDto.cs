@@ -1,9 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MinAppApi.Dtos
+namespace MinAppApi.Dtos.Event
 {
-    public class EventCreateDto
+    public class EventUpdateDto
     {
+        public int Id { get; set; }
+
         [Required, MaxLength(150)]
         public string Title { get; set; }
 
@@ -18,8 +20,7 @@ namespace MinAppApi.Dtos
 
         [Required]
         public int OrganizerId { get; set; }
-        public IFormFile image { get; set; }
+        public IFormFile Image { get; set; }
     }
-
 
 }

@@ -1,6 +1,6 @@
-﻿namespace MinAppApi.Dtos
+﻿namespace MinAppApi.Dtos.Organizer
 {
-    public class OrganizerReadDto
+    public class OrganizerGetDto
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -1,6 +1,8 @@
-﻿namespace MinAppApi.Dtos
+﻿using MinAppApi.Dtos.Organizer;
+
+namespace MinAppApi.Dtos.Event
 {
-    public class EventReadDto
+    public class EventGetDto
     {
         public int Id { get; set; }
         public string Title { get; set; }
@@ -9,7 +11,7 @@
         public string Location { get; set; }
         public string BannerImageUrl { get; set; }
 
-        public OrganizerReadDto Organizer { get; set; }
+        public OrganizerGetDto Organizer { get; set; }
     }
 
 
