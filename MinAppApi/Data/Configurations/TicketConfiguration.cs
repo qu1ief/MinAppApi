@@ -11,7 +11,6 @@ namespace MinAppApi.Data.Configurations
             builder.Property(e => e.Type).IsRequired(true).HasMaxLength(50);
             builder.Property(e => e.Price).IsRequired(true).HasColumnType("decimal(18,2)");
             builder.Property(e => e.QuantityAvailable).IsRequired(true);
-            builder.HasOne(e => e.Event).WithMany(t => t.Tickets).HasForeignKey(e => e.EventId);
         }
     }
 }

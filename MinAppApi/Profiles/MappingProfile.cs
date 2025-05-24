@@ -10,17 +10,17 @@ namespace MinAppApi.Profiles
     {
         public MappingProfile()
         {
-            CreateMap<Event, EventGetDto>();
-            CreateMap<EventCreateDto, Event>();
-            CreateMap<EventUpdateDto, Event>();
+            CreateMap<Event, EventGetDto>().ReverseMap();
+            CreateMap<EventCreateDto, Event>().ReverseMap();
+            CreateMap<EventUpdateDto, Event>().ReverseMap();
 
-            CreateMap<Organizer, OrganizerGetDto>();
-            CreateMap<OrganizerCreateDto, Organizer>();
-            CreateMap<OrganizerUpdateDto, Organizer>();
+            CreateMap<Organizer, OrganizerGetDto>().ReverseMap();
+            CreateMap<OrganizerCreateDto, Organizer>().ReverseMap();
+            CreateMap<OrganizerUpdateDto, Organizer>().ReverseMap();
 
-            CreateMap<Ticket, TicketGetDto>();
-            CreateMap<TicketCreateDto, Ticket>();
-            CreateMap<TicketUpdateDto, Ticket>();
+            CreateMap<Ticket, TicketGetDto>().ReverseMap();
+            CreateMap<TicketCreateDto, Ticket>().ReverseMap();
+            CreateMap<TicketUpdateDto, Ticket>().ReverseMap();
         }
     }
 }

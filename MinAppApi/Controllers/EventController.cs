@@ -86,7 +86,7 @@ namespace MinAppApi.Controllers
                 var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(dto.Image.FileName);
                 var filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
-                // Optional: köhnə şəkli sil
+            
                 if (!string.IsNullOrWhiteSpace(evt.BannerImageUrl))
                 {
                     var oldPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", evt.BannerImageUrl.TrimStart('/'));

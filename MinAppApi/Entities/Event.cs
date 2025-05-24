@@ -12,6 +12,5 @@ namespace MinAppApi.Entities
         public string BannerImageUrl { get; set; }
         public int OrganizerId { get; set; }
         public Organizer Organizer { get; set; }
-        public List<Ticket> Tickets { get; set; }
     }
 }
