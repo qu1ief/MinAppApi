@@ -2,6 +2,7 @@
 using MinAppApi.Dtos.Event;
 using MinAppApi.Dtos.Organizer;
 using MinAppApi.Dtos.Ticket;
+using MinAppApi.Dtos.User;
 using MinAppApi.Entities;
 
 namespace MinAppApi.Profiles
@@ -20,6 +21,9 @@ namespace MinAppApi.Profiles
 
             CreateMap<Ticket, TicketGetDto>().ReverseMap();
             CreateMap<TicketCreateDto, Ticket>().ReverseMap();
+            CreateMap<TicketUpdateDto, Ticket>().ReverseMap();
+
+            CreateMap<AppUser, RegisterDto>().ReverseMap();
             CreateMap<TicketUpdateDto, Ticket>().ReverseMap();
         }
     }
